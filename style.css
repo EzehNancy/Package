@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #f7d9ff, #ffd6e9);
+  color: #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+}
+
+h1, h2 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.2em;
+  margin-top: 1rem;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 15px;
+}
+
+.button, .nav-button {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #d8a3ff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.button:hover, .nav-button:hover {
+  background-color: #b76df3;
+}
+.memory-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin-top: 30px;
+  position: relative;
+}
+
+.memory-gallery img {
+  width: 160px;
+  height: auto;
+  margin-left: -40px; /* creates the overlapping effect */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.memory-gallery img:first-child {
+  margin-left: 0;
+}
+
+.memory-gallery img:hover {
+  transform: scale(1.05);
+  z-index: 10; /* bring hovered image forward */
+}
+
+
+    .love-message {
+      font-size: 1.3em;
+      line-height: 1.8;
+      background: rgba(255, 255, 255, 0.3);
+      padding: 2rem;
+      border-radius: 20px;
+    }
+  .heart {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    background-color: pink;
+    transform: rotate(45deg);
+    animation: float 6s infinite ease-in;
+    opacity: 0.7;
+  }
+
+  .heart::before, .heart::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .heart::before {
+    top: -10px;
+    left: 0;
+  }
+
+  .heart::after {
+    left: -10px;
+    top: 0;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(45deg);
+    }
+    100% {
+      transform: translateY(-100vh) rotate(45deg);
+    }
+  }

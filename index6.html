@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>I Love You</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <div class="container">
+    <h2>I Love You, and I'm Sorry</h2>
+    <div class="love-message">
+      <p>I’m not expecting perfection. I just want us to try—to really try. To communicate better, to understand each other more, and to handle our challenges like a team. 
+        I’m ready to put in the effort, not just because I miss you, but because I still see so much potential in what we have.</p>
+      <p>You mean a lot to me. I don’t want to throw away everything we’ve shared or the bond we’ve built. I want to move forward, not backward—and I hope we can do that together.</p>
+      <p>just honesty, love, and the hope that we can make things better… because you’re worth it, and so is this.</p>
+      <p>Thank you for watching the video and giving me this moment.</p>
+      <p>I love you.</p>
+      <p>Yours Truly,</p>
+      <p>Nancy</p>
+
+      <a href="https://wa.me/2349038028005?text=I%20love%20you%20%E2%9D%A4%EF%B8%8F" class="button" style="margin-top: 2rem; background: #f77cb2;">If you cried... Click this</a>
+
+    </div>
+  </div>
+
+  <script>
+  function createHearts() {
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (3 + Math.random() * 3) + "s";
+      document.body.appendChild(heart);
+    }
+  }
+  createHearts();
+</script>
+
+</body>
+</html>

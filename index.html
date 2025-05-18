@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For You</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Before Anything Else… I Want You to Know This</h1>
+    <p>I made this for you—because you mean more to me than I know how to say.</p>
+    <a href="index2.html" class="button">Unwrap My Apology</a>
+  </div>
+<script>
+  function createHearts() {
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (3 + Math.random() * 3) + "s";
+      document.body.appendChild(heart);
+    }
+  }
+  createHearts();
+</script>
+</body>
+</html>

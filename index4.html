@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Let's Try Again</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>I Still Believe in Us</h2>
+    <p>I know things haven’t always been perfect between us, but I just want you to know—I still believe in us. 
+        I care about you deeply, and I truly want things to be better, not just for a moment, but for the long run.</p>
+    <div class="memory-gallery">
+        <img src="IMG_3148.JPG" alt="Memory 1" />
+        
+    </div>    <a href="index5.html" class="nav-button">Final Page</a>
+  </div>
+
+<script>
+  function createHearts() {
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (3 + Math.random() * 3) + "s";
+      document.body.appendChild(heart);
+    }
+  }
+  createHearts();
+
+</script>
+</body>
+</html>
